@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="./index.css" />
-    <title>
-      04 Class selector
-    </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Rigo with Vanilla.js</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
 
   <body>
-    <div class="card_black spades">9</div>
+    <div class="container-fluid">
+      <div id="cartas">
+        <div id="paloariba"></div>
 
-    <div class="card_red heart">7</div>
+        <div id="numcarta" style="text-align: center;"></div>
+
+        <div id="paloabajo"></div>
+      </div>
+      <div class="d-inline-flex p-5">
+        <button
+          type="button"
+          id="btn"
+          class="btn btn-primary btn-lg"
+          onclick="location.reload();"
+        >
+          Refrescar
+        </button>
+      </div>
+    </div>
+    <script src="app.js"></script>
   </body>
 </html>
